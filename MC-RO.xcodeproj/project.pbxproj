@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E53534024C8641400CC1086 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E53533F24C8641400CC1086 /* AudioRecorder.swift */; };
+		1E59A27424C883AE00180F3C /* recorderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E59A27324C883AE00180F3C /* recorderList.swift */; };
+		1E59B34124C9C32300FE4F04 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E59B34024C9C32300FE4F04 /* Helper.swift */; };
+		1E97CC5B24CB2E8000742262 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E97CC5A24CB2E8000742262 /* AudioPlayer.swift */; };
+		1EC2018024C6F8560065F50F /* TabViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC2017F24C6F8560065F50F /* TabViewButton.swift */; };
+		1ECC2E7C24C9BABE007D727E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC2E7B24C9BABE007D727E /* Extensions.swift */; };
+		1ECC2E7E24C9BED4007D727E /* RecordingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC2E7D24C9BED4007D727E /* RecordingDataModel.swift */; };
 		E10DED9F24BF222E00576D13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10DED9E24BF222E00576D13 /* AppDelegate.swift */; };
 		E10DEDA124BF222E00576D13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10DEDA024BF222E00576D13 /* SceneDelegate.swift */; };
 		E10DEDA424BF222E00576D13 /* MC_RO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E10DEDA224BF222E00576D13 /* MC_RO.xcdatamodeld */; };
@@ -16,6 +23,11 @@
 		E10DEDAE24BF223100576D13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10DEDAC24BF223100576D13 /* LaunchScreen.storyboard */; };
 		E10DEDB924BF223100576D13 /* MC_ROTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10DEDB824BF223100576D13 /* MC_ROTests.swift */; };
 		E10DEDC424BF223100576D13 /* MC_ROUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10DEDC324BF223100576D13 /* MC_ROUITests.swift */; };
+		E10DEDD424BF42B200576D13 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10DEDD324BF42B200576D13 /* CircleImage.swift */; };
+		E18B80B524C413B900796B1C /* SongClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18B80B424C413B900796B1C /* SongClass.swift */; };
+		E1C492EF24C2E5060091A3C4 /* SongList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C492EE24C2E5060091A3C4 /* SongList.swift */; };
+		E1C492F124C2ED7C0091A3C4 /* WaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C492F024C2ED7C0091A3C4 /* WaterView.swift */; };
+		E1C492F324C2F3870091A3C4 /* EmptyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C492F224C2F3870091A3C4 /* EmptyList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +48,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E53533F24C8641400CC1086 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		1E59A27324C883AE00180F3C /* recorderList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recorderList.swift; sourceTree = "<group>"; };
+		1E59B34024C9C32300FE4F04 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		1E97CC5A24CB2E8000742262 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		1EC2017F24C6F8560065F50F /* TabViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewButton.swift; sourceTree = "<group>"; };
+		1ECC2E7B24C9BABE007D727E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1ECC2E7D24C9BED4007D727E /* RecordingDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingDataModel.swift; sourceTree = "<group>"; };
 		E10DED9B24BF222E00576D13 /* MC-RO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MC-RO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E10DED9E24BF222E00576D13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E10DEDA024BF222E00576D13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +70,11 @@
 		E10DEDBF24BF223100576D13 /* MC-ROUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MC-ROUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E10DEDC324BF223100576D13 /* MC_ROUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MC_ROUITests.swift; sourceTree = "<group>"; };
 		E10DEDC524BF223100576D13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E10DEDD324BF42B200576D13 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		E18B80B424C413B900796B1C /* SongClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongClass.swift; sourceTree = "<group>"; };
+		E1C492EE24C2E5060091A3C4 /* SongList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongList.swift; sourceTree = "<group>"; };
+		E1C492F024C2ED7C0091A3C4 /* WaterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterView.swift; sourceTree = "<group>"; };
+		E1C492F224C2F3870091A3C4 /* EmptyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +125,24 @@
 		E10DED9D24BF222E00576D13 /* MC-RO */ = {
 			isa = PBXGroup;
 			children = (
+				E10DEDAF24BF223100576D13 /* Info.plist */,
 				E10DED9E24BF222E00576D13 /* AppDelegate.swift */,
-				E10DEDA024BF222E00576D13 /* SceneDelegate.swift */,
+				1E97CC5A24CB2E8000742262 /* AudioPlayer.swift */,
+				1E53533F24C8641400CC1086 /* AudioRecorder.swift */,
+				E10DEDD324BF42B200576D13 /* CircleImage.swift */,
 				E10DEDA524BF222E00576D13 /* ContentView.swift */,
+				E1C492F224C2F3870091A3C4 /* EmptyList.swift */,
+				1ECC2E7B24C9BABE007D727E /* Extensions.swift */,
+				1E59B34024C9C32300FE4F04 /* Helper.swift */,
+				1E59A27324C883AE00180F3C /* recorderList.swift */,
+				1ECC2E7D24C9BED4007D727E /* RecordingDataModel.swift */,
+				E10DEDA024BF222E00576D13 /* SceneDelegate.swift */,
+				E18B80B424C413B900796B1C /* SongClass.swift */,
+				E1C492EE24C2E5060091A3C4 /* SongList.swift */,
+				1EC2017F24C6F8560065F50F /* TabViewButton.swift */,
+				E1C492F024C2ED7C0091A3C4 /* WaterView.swift */,
 				E10DEDA724BF223100576D13 /* Assets.xcassets */,
 				E10DEDAC24BF223100576D13 /* LaunchScreen.storyboard */,
-				E10DEDAF24BF223100576D13 /* Info.plist */,
 				E10DEDA224BF222E00576D13 /* MC_RO.xcdatamodeld */,
 				E10DEDA924BF223100576D13 /* Preview Content */,
 			);
@@ -270,10 +306,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EC2018024C6F8560065F50F /* TabViewButton.swift in Sources */,
+				E1C492EF24C2E5060091A3C4 /* SongList.swift in Sources */,
+				1E59B34124C9C32300FE4F04 /* Helper.swift in Sources */,
 				E10DED9F24BF222E00576D13 /* AppDelegate.swift in Sources */,
 				E10DEDA424BF222E00576D13 /* MC_RO.xcdatamodeld in Sources */,
 				E10DEDA624BF222E00576D13 /* ContentView.swift in Sources */,
+				1E53534024C8641400CC1086 /* AudioRecorder.swift in Sources */,
+				E18B80B524C413B900796B1C /* SongClass.swift in Sources */,
+				E1C492F124C2ED7C0091A3C4 /* WaterView.swift in Sources */,
+				1ECC2E7C24C9BABE007D727E /* Extensions.swift in Sources */,
+				1ECC2E7E24C9BED4007D727E /* RecordingDataModel.swift in Sources */,
+				1E97CC5B24CB2E8000742262 /* AudioPlayer.swift in Sources */,
+				E1C492F324C2F3870091A3C4 /* EmptyList.swift in Sources */,
 				E10DEDA124BF222E00576D13 /* SceneDelegate.swift in Sources */,
+				E10DEDD424BF42B200576D13 /* CircleImage.swift in Sources */,
+				1E59A27424C883AE00180F3C /* recorderList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +488,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MC-RO/Preview Content\"";
+				DEVELOPMENT_TEAM = MGYBZSDDXP;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "MC-RO/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -449,7 +498,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "MBWHP.MC-RO";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -459,6 +508,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MC-RO/Preview Content\"";
+				DEVELOPMENT_TEAM = MGYBZSDDXP;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "MC-RO/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,7 +518,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "MBWHP.MC-RO";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -478,6 +528,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F9GG4TND7;
 				INFOPLIST_FILE = "MC-ROTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -499,6 +550,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F9GG4TND7;
 				INFOPLIST_FILE = "MC-ROTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -519,6 +571,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F9GG4TND7;
 				INFOPLIST_FILE = "MC-ROUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -538,6 +591,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F9GG4TND7;
 				INFOPLIST_FILE = "MC-ROUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
