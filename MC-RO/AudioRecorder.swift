@@ -28,7 +28,7 @@ class AudioRecorder: NSObject,ObservableObject {
         }
     }
     
-    
+    //開始錄音
     func startRecording(){
         let recordingSession = AVAudioSession.sharedInstance()
         do{
@@ -62,6 +62,7 @@ class AudioRecorder: NSObject,ObservableObject {
         recording = false
         
         fetchRecording()
+        //更新錄音檔列表
     }
     
     func fetchRecording(){
@@ -78,6 +79,18 @@ class AudioRecorder: NSObject,ObservableObject {
         recordings.sort(by: { $0.createdAt.compare($1.createdAt) == .orderedAscending})
         
         objectWillChange.send(self)
+    }
+    
+    func deleteRecording(urlsToDelete: [URL]){
+        for url in urlsToDelete{
+            print(url)
+            do{
+                try FileManager.default.removeItem(at: url)
+            }catch{
+                print("File could not be deleted")
+            }
+        }
+        fetchRecording()
     }
 }
 
