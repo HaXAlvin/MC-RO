@@ -98,15 +98,21 @@ class AudioRecorder: NSObject,ObservableObject {
 
 struct RecorderView: View {
     @ObservedObject var audioRecorder: AudioRecorder
-    
+//    let actions = [audioRecorder.startRecording]
     var body: some View {
         VStack{
             RecordingsList(audioRecorder: audioRecorder)
-            if audioRecorder.recording == false {
+//            if audioRecorder.recording == false {
                 ZStack{
                     WaterView()
-                    Button(action: {self.audioRecorder.startRecording()}){
-                        Image(systemName: "circle.fill")
+                    Button(action: {
+                        if self.audioRecorder.recording == false{
+                            self.audioRecorder.startRecording()
+                        }else{
+                            self.audioRecorder.stopRecording()
+                        }
+                    }){
+                        Image(systemName: self.audioRecorder.recording == true ? "stop.fill":"circle.fill")
                         .resizable()
                             .aspectRatio(contentMode: .fill)
                         .frame(width: 70, height: 70)
@@ -116,22 +122,22 @@ struct RecorderView: View {
                         .offset(y: 20)
                     }
                 }
-            }
-            else {
-                ZStack{
-                    WaterView()
-                    Button(action:{self.audioRecorder.stopRecording()}){
-                        Image(systemName: "stop.fill")
-                        .resizable()
-                            .aspectRatio(contentMode: .fill)
-                        .frame(width: 70, height: 70)
-                        .clipped()
-                            .foregroundColor(.red)
-                            .padding(.bottom, 40)
-                        .offset(y: 20)
-                    }
-                }
-            }
+//            }
+//            else {
+//                ZStack{
+//                    WaterView()
+//                    Button(action:{self.audioRecorder.stopRecording()}){
+//                        Image(systemName: "stop.fill")
+//                        .resizable()
+//                            .aspectRatio(contentMode: .fill)
+//                        .frame(width: 70, height: 70)
+//                        .clipped()
+//                            .foregroundColor(.red)
+//                            .padding(.bottom, 40)
+//                        .offset(y: 20)
+//                    }
+//                }
+//            }
         }
     }
 }
@@ -142,4 +148,4 @@ struct RecorderView_Previews: PreviewProvider {
     }
 }
 
-let recorderView = RecorderView(audioRecorder: AudioRecorder())
+//let recorderView = RecorderView(audioRecorder: AudioRecorder())

@@ -24,7 +24,7 @@ struct ContentView: View {
             }.tag(1).preferredColorScheme(.light)
             
             NavigationView{
-                RecordView().navigationBarTitle("microphone")
+                RecorderView(audioRecorder: AudioRecorder()).navigationBarTitle("microphone")
             }.tabItem{
                 TabViewButton(pictureName: "microphone")
             }.tag(2).preferredColorScheme(.light)
@@ -89,21 +89,6 @@ struct YoutubeView: View {
                 .padding()
                     .frame(width: 300, alignment: .center)
             }
-        }
-    }
-}
-
-struct RecordView: View {
-    var screenBound = UIScreen.main.bounds
-    var songs:[Int:Song] = [
-        0:Song(id: 0, singer: "茄子蛋", name: "浪流連", songPic: "浪流連",time: "05:04"),
-        1:Song(id: 1, singer: "831", name: "小心肝", songPic: "831",time: "03:50")
-    ]
-    var songCount = 2
-    
-    var body: some View {
-        VStack{
-            RecorderView(audioRecorder: AudioRecorder())
         }
     }
 }

@@ -10,23 +10,7 @@ import SwiftUI
 
 struct WaterView: View {
     var body: some View {
-//        Path{ (path) in
-////            path.move(to: CGPoint(x: 0, y: 150))
-//            path.move(to: CGPoint(x: 0, y: UIScreen.screenHeight/5*4))
-//            path.addQuadCurve(
-//                to: CGPoint(x: UIScreen.screenWidth/2, y: UIScreen.screenHeight/5*4),
-//                control: CGPoint(x: UIScreen.screenWidth/4, y: UIScreen.screenHeight/5*4-100)
-//            )
-//            path.addQuadCurve(
-//                to: CGPoint(x: UIScreen.screenWidth, y: UIScreen.screenHeight/5*4),
-//                control: CGPoint(x: UIScreen.screenWidth/4*3, y: UIScreen.screenHeight/5*4+100)
-//            )
-//            path.addLine(to: CGPoint(x: UIScreen.screenWidth, y: UIScreen.screenHeight))
-//            path.addLine(to: CGPoint(x: 0, y: UIScreen.screenHeight))
-//        }
-//        .fill(Color.blue)
-//        .frame(width: UIScreen.screenWidth, height:UIScreen.screenHeight-UIScreen.screenHeight/5*4+100)
-//        .offset(x: 0, y: -400)
+        // try sin
         Path{ (path) in
             path.move(to: CGPoint(x: 0, y: 0))
             path.addQuadCurve(

@@ -24,6 +24,7 @@
 		E10DEDB924BF223100576D13 /* MC_ROTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10DEDB824BF223100576D13 /* MC_ROTests.swift */; };
 		E10DEDC424BF223100576D13 /* MC_ROUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10DEDC324BF223100576D13 /* MC_ROUITests.swift */; };
 		E10DEDD424BF42B200576D13 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10DEDD324BF42B200576D13 /* CircleImage.swift */; };
+		E12ED64A24CC56E200584A35 /* PostTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12ED64924CC56E200584A35 /* PostTest.swift */; };
 		E18B80B524C413B900796B1C /* SongClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18B80B424C413B900796B1C /* SongClass.swift */; };
 		E1C492EF24C2E5060091A3C4 /* SongList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C492EE24C2E5060091A3C4 /* SongList.swift */; };
 		E1C492F124C2ED7C0091A3C4 /* WaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C492F024C2ED7C0091A3C4 /* WaterView.swift */; };
@@ -71,6 +72,7 @@
 		E10DEDC324BF223100576D13 /* MC_ROUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MC_ROUITests.swift; sourceTree = "<group>"; };
 		E10DEDC524BF223100576D13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E10DEDD324BF42B200576D13 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		E12ED64924CC56E200584A35 /* PostTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTest.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		E18B80B424C413B900796B1C /* SongClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongClass.swift; sourceTree = "<group>"; };
 		E1C492EE24C2E5060091A3C4 /* SongList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongList.swift; sourceTree = "<group>"; };
 		E1C492F024C2ED7C0091A3C4 /* WaterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterView.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				E10DEDAC24BF223100576D13 /* LaunchScreen.storyboard */,
 				E10DEDA224BF222E00576D13 /* MC_RO.xcdatamodeld */,
 				E10DEDA924BF223100576D13 /* Preview Content */,
+				E12ED64924CC56E200584A35 /* PostTest.swift */,
 			);
 			path = "MC-RO";
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				E10DEDA124BF222E00576D13 /* SceneDelegate.swift in Sources */,
 				E10DEDD424BF42B200576D13 /* CircleImage.swift in Sources */,
 				1E59A27424C883AE00180F3C /* recorderList.swift in Sources */,
+				E12ED64A24CC56E200584A35 /* PostTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,7 +492,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MC-RO/Preview Content\"";
-				DEVELOPMENT_TEAM = MGYBZSDDXP;
+				DEVELOPMENT_TEAM = 3F9GG4TND7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "MC-RO/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -508,7 +512,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MC-RO/Preview Content\"";
-				DEVELOPMENT_TEAM = MGYBZSDDXP;
+				DEVELOPMENT_TEAM = 3F9GG4TND7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "MC-RO/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
