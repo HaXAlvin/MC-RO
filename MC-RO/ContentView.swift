@@ -8,6 +8,7 @@
 
 import SwiftUI
 import Combine
+import UIKit
 struct ContentView: View {
     
     var body: some View {
@@ -51,17 +52,7 @@ struct FileView: View {
             }
             ZStack{
                 WaterView()
-                Button(action: {
-                    print("123")
-                }){
-                    Image("upload")
-                        .resizable()
-                        .padding()
-                        .frame(width: 100, height: 100)
-                        .opacity(0.5)
-                }.buttonStyle(
-                    PlainButtonStyle()
-                )
+                fileUpload()
             }
         }
     }
@@ -86,15 +77,29 @@ struct YoutubeView: View {
             }
             ZStack{
                 WaterView()
-                TextField("youtube連結",text: $URLOfYoutube)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-                    .frame(width: 300, alignment: .center)
+                VStack{
+                    TextField("youtube連結",text: $URLOfYoutube)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+                        .frame(width: 300, alignment: .center)
+                    Button(action: {
+                        print("解析youtube")
+                    }){
+                        Text("解析")
+                            .font(.system(size: 18))
+                            .foregroundColor(Color.init(hex: "#fffff5", alpha: 1.0))
+                        .padding()
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 18)
+                            .stroke(Color.init(hex: "#fffff5", alpha: 1.0), lineWidth: 2)
+                        )
+                    }
+                }
             }
         }.padding()
             .padding(.bottom, keyboardHeight)
             .onReceive(Publishers.keyboardHeight){
-                self.keyboardHeight = $0 - 50
+                self.keyboardHeight = $0 - 18
         }
     }
 }

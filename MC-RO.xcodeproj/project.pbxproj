@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1E50585324D06F740043A823 /* keyboardMoveUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E50585224D06F740043A823 /* keyboardMoveUp.swift */; };
 		1E50585524D0932E0043A823 /* colorTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E50585424D0932E0043A823 /* colorTransform.swift */; };
+		1E50585724D123DA0043A823 /* postTestCopy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E50585624D123DA0043A823 /* postTestCopy.swift */; };
 		1E53534024C8641400CC1086 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E53533F24C8641400CC1086 /* AudioRecorder.swift */; };
 		1E59A27424C883AE00180F3C /* recorderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E59A27324C883AE00180F3C /* recorderList.swift */; };
 		1E59B34124C9C32300FE4F04 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E59B34024C9C32300FE4F04 /* Helper.swift */; };
@@ -16,6 +17,7 @@
 		1EC2018024C6F8560065F50F /* TabViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC2017F24C6F8560065F50F /* TabViewButton.swift */; };
 		1ECC2E7C24C9BABE007D727E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC2E7B24C9BABE007D727E /* Extensions.swift */; };
 		1ECC2E7E24C9BED4007D727E /* RecordingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC2E7D24C9BED4007D727E /* RecordingDataModel.swift */; };
+		1ED1440624D143B7001F76B5 /* fileUploadTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED1440524D143B7001F76B5 /* fileUploadTest.swift */; };
 		E10DED9F24BF222E00576D13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10DED9E24BF222E00576D13 /* AppDelegate.swift */; };
 		E10DEDA124BF222E00576D13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10DEDA024BF222E00576D13 /* SceneDelegate.swift */; };
 		E10DEDA424BF222E00576D13 /* MC_RO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E10DEDA224BF222E00576D13 /* MC_RO.xcdatamodeld */; };
@@ -53,6 +55,7 @@
 /* Begin PBXFileReference section */
 		1E50585224D06F740043A823 /* keyboardMoveUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyboardMoveUp.swift; sourceTree = "<group>"; };
 		1E50585424D0932E0043A823 /* colorTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorTransform.swift; sourceTree = "<group>"; };
+		1E50585624D123DA0043A823 /* postTestCopy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postTestCopy.swift; sourceTree = "<group>"; };
 		1E53533F24C8641400CC1086 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
 		1E59A27324C883AE00180F3C /* recorderList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recorderList.swift; sourceTree = "<group>"; };
 		1E59B34024C9C32300FE4F04 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
@@ -60,6 +63,7 @@
 		1EC2017F24C6F8560065F50F /* TabViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewButton.swift; sourceTree = "<group>"; };
 		1ECC2E7B24C9BABE007D727E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1ECC2E7D24C9BED4007D727E /* RecordingDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingDataModel.swift; sourceTree = "<group>"; };
+		1ED1440524D143B7001F76B5 /* fileUploadTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fileUploadTest.swift; sourceTree = "<group>"; };
 		E10DED9B24BF222E00576D13 /* MC-RO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MC-RO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E10DED9E24BF222E00576D13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E10DEDA024BF222E00576D13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +141,7 @@
 				1E53533F24C8641400CC1086 /* AudioRecorder.swift */,
 				E10DEDD324BF42B200576D13 /* CircleImage.swift */,
 				E10DEDA524BF222E00576D13 /* ContentView.swift */,
+				1ED1440524D143B7001F76B5 /* fileUploadTest.swift */,
 				E1C492F224C2F3870091A3C4 /* EmptyList.swift */,
 				1ECC2E7B24C9BABE007D727E /* Extensions.swift */,
 				1E59B34024C9C32300FE4F04 /* Helper.swift */,
@@ -153,6 +158,7 @@
 				E10DEDA224BF222E00576D13 /* MC_RO.xcdatamodeld */,
 				E10DEDA924BF223100576D13 /* Preview Content */,
 				E12ED64924CC56E200584A35 /* PostTest.swift */,
+				1E50585624D123DA0043A823 /* postTestCopy.swift */,
 				1E50585224D06F740043A823 /* keyboardMoveUp.swift */,
 			);
 			path = "MC-RO";
@@ -315,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ED1440624D143B7001F76B5 /* fileUploadTest.swift in Sources */,
 				1EC2018024C6F8560065F50F /* TabViewButton.swift in Sources */,
 				E1C492EF24C2E5060091A3C4 /* SongList.swift in Sources */,
 				1E59B34124C9C32300FE4F04 /* Helper.swift in Sources */,
@@ -329,6 +336,7 @@
 				1ECC2E7E24C9BED4007D727E /* RecordingDataModel.swift in Sources */,
 				1E97CC5B24CB2E8000742262 /* AudioPlayer.swift in Sources */,
 				E1C492F324C2F3870091A3C4 /* EmptyList.swift in Sources */,
+				1E50585724D123DA0043A823 /* postTestCopy.swift in Sources */,
 				E10DEDA124BF222E00576D13 /* SceneDelegate.swift in Sources */,
 				E10DEDD424BF42B200576D13 /* CircleImage.swift in Sources */,
 				1E59A27424C883AE00180F3C /* recorderList.swift in Sources */,

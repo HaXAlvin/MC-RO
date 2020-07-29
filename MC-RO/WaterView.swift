@@ -25,7 +25,7 @@ struct WaterView: View {
             path.addLine(to: CGPoint(x: 0, y: UIScreen.screenHeight))
         }
         .fill(Color.init(hex: "#5c868d", alpha: 1.0))
-        .frame(width: UIScreen.screenWidth, height:UIScreen.screenHeight/4-70)//50
+        .frame(width: UIScreen.screenWidth, height:UIScreen.screenHeight/4-50)//50
         .offset(x: 0, y: -50)
     }
 }
