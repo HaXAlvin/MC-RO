@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Combine
 struct ContentView: View {
     
     var body: some View {
@@ -24,7 +25,7 @@ struct ContentView: View {
             }.tag(1).preferredColorScheme(.light)
             
             NavigationView{
-                RecorderView(audioRecorder: AudioRecorder()).navigationBarTitle("microphone")
+                RecorderView(audioRecorder: AudioRecorder()).navigationBarTitle("Record")
             }.tabItem{
                 TabViewButton(pictureName: "microphone")
             }.tag(2).preferredColorScheme(.light)
@@ -74,6 +75,7 @@ struct YoutubeView: View {
     ]
     var songCount = 2
     @State private var URLOfYoutube = ""
+    @State private var keyboardHeight: CGFloat = 0
     var body: some View {
         VStack{
             List {
@@ -89,6 +91,10 @@ struct YoutubeView: View {
                 .padding()
                     .frame(width: 300, alignment: .center)
             }
+        }.padding()
+            .padding(.bottom, keyboardHeight)
+            .onReceive(Publishers.keyboardHeight){
+                self.keyboardHeight = $0 - 50
         }
     }
 }

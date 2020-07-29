@@ -24,11 +24,10 @@ struct WaterView: View {
             path.addLine(to: CGPoint(x: UIScreen.screenWidth, y: UIScreen.screenHeight))
             path.addLine(to: CGPoint(x: 0, y: UIScreen.screenHeight))
         }
-        .fill(Color.blue)
-        .frame(width: UIScreen.screenWidth, height:UIScreen.screenHeight/4-50)
+        .fill(Color.init(hex: "#5c868d", alpha: 1.0))
+        .frame(width: UIScreen.screenWidth, height:UIScreen.screenHeight/4-70)//50
         .offset(x: 0, y: -50)
     }
-        
 }
 
 struct WaterView_Previews: PreviewProvider {
