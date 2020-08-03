@@ -40,7 +40,7 @@ class AudioRecorder: NSObject,ObservableObject {
         }
         let documentPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
         let audioFilename = documentPath.appendingPathComponent("\(Date().toString(dateFormat: "dd-MM-YY_'at'_HH:mm:ss")).m4a")
-        
+
         let setting = [
             AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
             AVSampleRateKey: 12000,
@@ -70,6 +70,8 @@ class AudioRecorder: NSObject,ObservableObject {
         
         let fileManager = FileManager.default
         let documentDirectory = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        print("urls");
+        print(documentDirectory);
         let directoryContents = try! fileManager.contentsOfDirectory(at: documentDirectory, includingPropertiesForKeys: nil)
         for audio in directoryContents {
             let recording = Recording(fileURL: audio, createdAt: getCreationDate(for: audio))
@@ -102,42 +104,25 @@ struct RecorderView: View {
     var body: some View {
         VStack{
             RecordingsList(audioRecorder: audioRecorder)
-//            if audioRecorder.recording == false {
-                ZStack{
-                    WaterView()
-                    Button(action: {
-                        if self.audioRecorder.recording == false{
-                            self.audioRecorder.startRecording()
-                        }else{
-                            self.audioRecorder.stopRecording()
-                        }
-                    }){
-                        Image(systemName: self.audioRecorder.recording == true ? "stop.fill":"circle.fill")
-                        .resizable()
-                            .aspectRatio(contentMode: .fill)
-                        .frame(width: 70, height: 70)
-                        .clipped()
-                            .foregroundColor(.red)
-                            .padding(.bottom, 40)
-                        .offset(y: 20)
+            ZStack{
+                WaterView()
+                Button(action: {
+                    if self.audioRecorder.recording == false{
+                        self.audioRecorder.startRecording()
+                    }else{
+                        self.audioRecorder.stopRecording()
                     }
+                }){
+                    Image(systemName: self.audioRecorder.recording == true ? "stop.fill":"circle.fill")
+                    .resizable()
+                        .aspectRatio(contentMode: .fill)
+                    .frame(width: 70, height: 70)
+                    .clipped()
+                        .foregroundColor(.red)
+                        .padding(.bottom, 40)
+                    .offset(y: 20)
                 }
-//            }
-//            else {
-//                ZStack{
-//                    WaterView()
-//                    Button(action:{self.audioRecorder.stopRecording()}){
-//                        Image(systemName: "stop.fill")
-//                        .resizable()
-//                            .aspectRatio(contentMode: .fill)
-//                        .frame(width: 70, height: 70)
-//                        .clipped()
-//                            .foregroundColor(.red)
-//                            .padding(.bottom, 40)
-//                        .offset(y: 20)
-//                    }
-//                }
-//            }
+            }
         }
     }
 }

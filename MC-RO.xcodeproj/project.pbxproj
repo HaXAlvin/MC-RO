@@ -13,6 +13,9 @@
 		1E53534024C8641400CC1086 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E53533F24C8641400CC1086 /* AudioRecorder.swift */; };
 		1E59A27424C883AE00180F3C /* recorderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E59A27324C883AE00180F3C /* recorderList.swift */; };
 		1E59B34124C9C32300FE4F04 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E59B34024C9C32300FE4F04 /* Helper.swift */; };
+		1E92B6B124D845C6004D8980 /* SeperateSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E92B6B024D845C6004D8980 /* SeperateSound.swift */; };
+		1E92B6B324D85775004D8980 /* 小心肝.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1E92B6B224D85775004D8980 /* 小心肝.mp3 */; };
+		1E92B6B524D8587E004D8980 /* 浪流連.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1E92B6B424D8587E004D8980 /* 浪流連.mp3 */; };
 		1E97CC5B24CB2E8000742262 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E97CC5A24CB2E8000742262 /* AudioPlayer.swift */; };
 		1EC2018024C6F8560065F50F /* TabViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC2017F24C6F8560065F50F /* TabViewButton.swift */; };
 		1ECC2E7C24C9BABE007D727E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC2E7B24C9BABE007D727E /* Extensions.swift */; };
@@ -59,6 +62,9 @@
 		1E53533F24C8641400CC1086 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
 		1E59A27324C883AE00180F3C /* recorderList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recorderList.swift; sourceTree = "<group>"; };
 		1E59B34024C9C32300FE4F04 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		1E92B6B024D845C6004D8980 /* SeperateSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeperateSound.swift; sourceTree = "<group>"; };
+		1E92B6B224D85775004D8980 /* 小心肝.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "小心肝.mp3"; sourceTree = "<group>"; };
+		1E92B6B424D8587E004D8980 /* 浪流連.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "浪流連.mp3"; sourceTree = "<group>"; };
 		1E97CC5A24CB2E8000742262 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		1EC2017F24C6F8560065F50F /* TabViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewButton.swift; sourceTree = "<group>"; };
 		1ECC2E7B24C9BABE007D727E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -119,6 +125,7 @@
 				E10DEDB724BF223100576D13 /* MC-ROTests */,
 				E10DEDC224BF223100576D13 /* MC-ROUITests */,
 				E10DED9C24BF222E00576D13 /* Products */,
+				1E92B6B024D845C6004D8980 /* SeperateSound.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,16 +142,24 @@
 		E10DED9D24BF222E00576D13 /* MC-RO */ = {
 			isa = PBXGroup;
 			children = (
-				E10DEDAF24BF223100576D13 /* Info.plist */,
 				E10DED9E24BF222E00576D13 /* AppDelegate.swift */,
+				E10DEDA724BF223100576D13 /* Assets.xcassets */,
 				1E97CC5A24CB2E8000742262 /* AudioPlayer.swift */,
 				1E53533F24C8641400CC1086 /* AudioRecorder.swift */,
 				E10DEDD324BF42B200576D13 /* CircleImage.swift */,
+				1E50585424D0932E0043A823 /* colorTransform.swift */,
 				E10DEDA524BF222E00576D13 /* ContentView.swift */,
-				1ED1440524D143B7001F76B5 /* fileUploadTest.swift */,
 				E1C492F224C2F3870091A3C4 /* EmptyList.swift */,
 				1ECC2E7B24C9BABE007D727E /* Extensions.swift */,
+				1ED1440524D143B7001F76B5 /* fileUploadTest.swift */,
 				1E59B34024C9C32300FE4F04 /* Helper.swift */,
+				E10DEDAF24BF223100576D13 /* Info.plist */,
+				1E50585224D06F740043A823 /* keyboardMoveUp.swift */,
+				E10DEDAC24BF223100576D13 /* LaunchScreen.storyboard */,
+				E10DEDA224BF222E00576D13 /* MC_RO.xcdatamodeld */,
+				E12ED64924CC56E200584A35 /* PostTest.swift */,
+				1E50585624D123DA0043A823 /* postTestCopy.swift */,
+				E10DEDA924BF223100576D13 /* Preview Content */,
 				1E59A27324C883AE00180F3C /* recorderList.swift */,
 				1ECC2E7D24C9BED4007D727E /* RecordingDataModel.swift */,
 				E10DEDA024BF222E00576D13 /* SceneDelegate.swift */,
@@ -152,14 +167,8 @@
 				E1C492EE24C2E5060091A3C4 /* SongList.swift */,
 				1EC2017F24C6F8560065F50F /* TabViewButton.swift */,
 				E1C492F024C2ED7C0091A3C4 /* WaterView.swift */,
-				1E50585424D0932E0043A823 /* colorTransform.swift */,
-				E10DEDA724BF223100576D13 /* Assets.xcassets */,
-				E10DEDAC24BF223100576D13 /* LaunchScreen.storyboard */,
-				E10DEDA224BF222E00576D13 /* MC_RO.xcdatamodeld */,
-				E10DEDA924BF223100576D13 /* Preview Content */,
-				E12ED64924CC56E200584A35 /* PostTest.swift */,
-				1E50585624D123DA0043A823 /* postTestCopy.swift */,
-				1E50585224D06F740043A823 /* keyboardMoveUp.swift */,
+				1E92B6B224D85775004D8980 /* 小心肝.mp3 */,
+				1E92B6B424D8587E004D8980 /* 浪流連.mp3 */,
 			);
 			path = "MC-RO";
 			sourceTree = "<group>";
@@ -294,6 +303,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E92B6B524D8587E004D8980 /* 浪流連.mp3 in Resources */,
+				1E92B6B324D85775004D8980 /* 小心肝.mp3 in Resources */,
 				E10DEDAE24BF223100576D13 /* LaunchScreen.storyboard in Resources */,
 				E10DEDAB24BF223100576D13 /* Preview Assets.xcassets in Resources */,
 				E10DEDA824BF223100576D13 /* Assets.xcassets in Resources */,
@@ -337,6 +348,7 @@
 				1E97CC5B24CB2E8000742262 /* AudioPlayer.swift in Sources */,
 				E1C492F324C2F3870091A3C4 /* EmptyList.swift in Sources */,
 				1E50585724D123DA0043A823 /* postTestCopy.swift in Sources */,
+				1E92B6B124D845C6004D8980 /* SeperateSound.swift in Sources */,
 				E10DEDA124BF222E00576D13 /* SceneDelegate.swift in Sources */,
 				E10DEDD424BF42B200576D13 /* CircleImage.swift in Sources */,
 				1E59A27424C883AE00180F3C /* recorderList.swift in Sources */,

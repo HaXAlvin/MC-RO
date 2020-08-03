@@ -37,15 +37,12 @@ struct SongList: View {
                     Text(song.singer)
                         .font(.subheadline)
                     Spacer()
-                    Button(action:{
-                        print(123)
-                    }){
-                        
-                        Image("sheet")
+                    NavigationLink(destination: seperateList()){
+                        Image("water")
                             .resizable()
                             .scaledToFit()
                             .frame(width: 28, height: 28)
-                    }.buttonStyle(PlainButtonStyle())
+                    }
                     Button(action:{
                         self.nowHeart = self.nowHeart == 1 ? 0 : 1
                     }){

@@ -72,10 +72,10 @@ struct DocumentPicker : UIViewControllerRepresentable {
         
         func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
             print(urls)
-            var uploadSongList = [URL]()
+//            var uploadSongList = [URL]()
             
-            uploadSongList.append(contentsOf: urls)
-            print(uploadSongList)
+//            uploadSongList.append(contentsOf: urls)
+//            print(uploadSongList)
         }
     }
 }
